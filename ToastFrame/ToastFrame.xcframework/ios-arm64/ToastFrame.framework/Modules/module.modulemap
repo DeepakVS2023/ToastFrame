@@ -1,0 +1,11 @@
+framework module ToastFrame {
+  umbrella header "ToastFrame.h"
+
+  export *
+  module * { export * }
+}
+
+module ToastFrame.Swift {
+  header "ToastFrame-Swift.h"
+  requires objc
+}
