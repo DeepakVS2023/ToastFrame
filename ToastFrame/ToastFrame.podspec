@@ -5,7 +5,12 @@ Pod::Spec.new do |spec|
   spec.summary      = "This is for testing."
   spec.description  = "Its my application for testing purpose."
 
-  spec.homepage     = "http://10.249.10.58:800/deepak_agarwal/tedemo"
+  spec.homepage     = "https://github.com/DeepakVS2023/ToastFrame"
+  spec.source       = { :git => "https://github.com/DeepakVS2023/ToastFrame.git", :tag => "#{spec.version.to_s}" }
+  spec.source_files  = "ToastFrame/**/*.{swift}"
+  spec.dependency "Toast-Swift"
+
+
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -57,7 +62,6 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://10.249.10.58:800/deepak_agarwal/tedemo.git", :tag => "#{spec.version.to_s}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +72,6 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ToastFrame/**/*.{swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -112,6 +115,5 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   
-  spec.dependency "Toast-Swift"
 
 end
