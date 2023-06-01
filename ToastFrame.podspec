@@ -2,15 +2,27 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ToastFrame"
   spec.version      = "1.0.0"
-  spec.summary      = "Testing for pod."
-  spec.authors            = { "Deepak Agarwal" => "deepak.agarwal@gingerwebs.co.in" }
-  spec.description  = "Testing for pod and check in our project."
+  spec.summary      = "This is for testing."
+  spec.description  = "Its my application for testing purpose."
 
   spec.homepage     = "https://github.com/DeepakVS2023/ToastFrame"
-  spec.license      = "MIT"
   spec.source       = { :git => "https://github.com/DeepakVS2023/ToastFrame.git", :tag => "#{spec.version.to_s}" }
   spec.source_files  = "ToastFrame/**/*.{swift}"
   spec.dependency "Toast-Swift"
+
+
+  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
+
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Licensing your code is important. See https://choosealicense.com for more info.
+  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #
+
+ spec.license      = "MIT"
+  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -23,7 +35,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
+  spec.author             = { "Deepak Agarwal" => "deepak.agarwal@gingerwebs.co.in" }
   # Or just: spec.author    = "Deepak Agarwal"
+  # spec.authors            = { "Deepak Agarwal" => "deepak.agarwal@gingerwebs.co.in" }
   # spec.social_media_url   = "https://twitter.com/Deepak Agarwal"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -32,9 +46,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   spec.platform     = :ios
-   spec.platform     = :ios, "8.0"
-   spec.swift_version = "5.0"
+  # spec.platform     = :ios
+  # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -59,6 +72,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -100,5 +114,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  
 
 end
